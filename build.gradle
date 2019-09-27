@@ -1,6 +1,7 @@
 plugins {
     id 'java'
     id 'war'
+    id "io.freefair.lombok" version "4.1.1"
 }
 
 group 'sample'
@@ -14,7 +15,7 @@ repositories {
 
 dependencies {
 
-    testCompile 'org.springframework:spring-test:4.2.1.RELEASE'
+    testCompile 'org.springframework:spring-test:4.3.4.RELEASE'
     testCompile group: 'junit', name: 'junit', version: '4.12'
 
     compile "org.springframework:spring-core:4.3.4.RELEASE"
